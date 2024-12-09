@@ -71,3 +71,12 @@ function setup() {
 	Runner.run(runner, engine);
 
 }
+// PUT THIS IN A DIFFERENT TAB IN OPENPROCESSING!!
+function keyPressed() {
+	if (keyCode == UP_ARROW) {
+		var pos = circleA.position
+		var upforce = createVector(0, -0.04)
+		Body.applyForce(circleA, pos, upforce)
+	}
+}
+
